@@ -1,20 +1,20 @@
 # IMPORTING LIBRARIES AND DATA SET -
-### For this project, we will be analyzing the Iris data set,
-### specifically creating an ml model that predicts which Species a given flower will be based on other variables
-### in the data set. Specifically, we will analyze how variables, like Petal length and Sepal length can be used to
-### determine which species a flower will be and how much those variables affects the model’s predictability.
-### To begin, we will import the necessary libraries that contain the data set and the ml functions. dplyr includes
-### the ‘iris’ data set that we will be using. Additionally, I have imported ggplot2 to create interactive plots
-### when doing an initial analysis of the data. caret is a necessary package for classification ml models, which we
-### will be conducting today.
+#### For this project, we will be analyzing the Iris data set,
+#### specifically creating an ml model that predicts which Species a given flower will be based on other variables
+#### in the data set. Specifically, we will analyze how variables, like Petal length and Sepal length can be used to
+#### determine which species a flower will be and how much those variables affects the model’s predictability.
+#### To begin, we will import the necessary libraries that contain the data set and the ml functions. dplyr includes
+#### the ‘iris’ data set that we will be using. Additionally, I have imported ggplot2 to create interactive plots
+#### when doing an initial analysis of the data. caret is a necessary package for classification ml models, which we
+#### will be conducting today.
 
 ## OVERVIEW OF ‘IRIS’ - 
-### ‘iris’ is a data set that includes various variables regarding three different iris species.
-### These variables include Sepal Length, Sepal width, and Petal Lengths and widths. This data is generally
-### straightforward for the questions we will be asking the ml model to predict. By this I mean that there is no
-### missing data to filter out when we start our analysis and we have both categorical and numeric variablesto
-### make predictions.
-## summary(iris)
+#### ‘iris’ is a data set that includes various variables regarding three different iris species.
+#### These variables include Sepal Length, Sepal width, and Petal Lengths and widths. This data is generally
+#### straightforward for the questions we will be asking the ml model to predict. By this I mean that there is no
+#### missing data to filter out when we start our analysis and we have both categorical and numeric variablesto
+#### make predictions.
+#### summary(iris)
 
 ### loading requried Libraries that contains dataset and the functions for plotting
 ```
@@ -28,17 +28,17 @@ library(caret)
 data("iris")
 head(iris)
 ```
-## Sepal.Length Sepal.Width Petal.Length Petal.Width
-## Min. :4.300 Min. :2.000 Min. :1.000 Min. :0.100
-## 1st Qu.:5.100 1st Qu.:2.800 1st Qu.:1.600 1st Qu.:0.300
-## Median :5.800 Median :3.000 Median :4.350 Median :1.300
-## Mean :5.843 Mean :3.057 Mean :3.758 Mean :1.199
-## 3rd Qu.:6.400 3rd Qu.:3.300 3rd Qu.:5.100 3rd Qu.:1.800
-## Max. :7.900 Max. :4.400 Max. :6.900 Max. :2.500
-## Species
-## setosa :50
-## versicolor:50
-## virginica :50
+#### Sepal.Length Sepal.Width Petal.Length Petal.Width
+#### Min. :4.300 Min. :2.000 Min. :1.000 Min. :0.100
+#### 1st Qu.:5.100 1st Qu.:2.800 1st Qu.:1.600 1st Qu.:0.300
+#### Median :5.800 Median :3.000 Median :4.350 Median :1.300
+#### Mean :5.843 Mean :3.057 Mean :3.758 Mean :1.199
+#### 3rd Qu.:6.400 3rd Qu.:3.300 3rd Qu.:5.100 3rd Qu.:1.800
+#### Max. :7.900 Max. :4.400 Max. :6.900 Max. :2.500
+#### Species
+#### setosa :50
+#### versicolor:50
+#### virginica :50
 
 ## DATA EXPLORATION-
 ### Since we want to predict which factors contribute most to species categorization,
